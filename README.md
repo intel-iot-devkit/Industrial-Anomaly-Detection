@@ -5,7 +5,7 @@
 | Time to complete:     |  3 hours      |
 
 ## Introduction
-Factories use existing PLCs to control equipment and may use several different devices for the human machine interface (HMI), data ingestion, and computer vision application. This reference implementation demonstrates how all these workloads can run independently on one system. A Kernel-based virtual machine (KVM) on a host system runs multiple virtual machines (VMs) or guests. The [object flaw detector](https://github.com/intel-iot-devkit/reference-implementation-private/tree/master/object-flaw-detector-python) and the [motor defect detector](https://github.com/intel-iot-devkit/reference-implementation-private/tree/master/motor-defect-detector) applications are deployed on these virtual machines. Data visualization occurs on Grafana* on the third virtual machine.
+Factories use existing PLCs to control equipment and may use several different devices for the human machine interface (HMI), data ingestion, and computer vision application. This reference implementation demonstrates how all these workloads can run independently on one system. A Kernel-based virtual machine (KVM) on a host system runs multiple virtual machines (VMs) or guests. The [object flaw detector](https://github.com/intel-iot-devkit/object-flaw-detector-python) and the [motor defect detector](https://github.com/intel-iot-devkit/motor-defect-detector-cpp) applications are deployed on these virtual machines. Data visualization occurs on Grafana* on the third virtual machine.
 
 ## Requirements
 
@@ -133,11 +133,11 @@ In this application, KVM creates three guest VMs on a host machine. Each virtual
 
 ### Run the Applications on the Virtual Machines
 
-* For the OFD machine, get the source code of the OFD application from the [GitHub* repository.](https://github.com/intel-iot-devkit/reference-implementation-private/tree/master/object-flaw-detector-python)
+* For the OFD machine, get the source code of the OFD application from the [GitHub* repository.](https://github.com/intel-iot-devkit/object-flaw-detector-python)
 	
 * Follow the object flaw detector readme to run the application. Skip the steps for installing Grafana and creating the dashboard in grafana for data visualization.
 
-* For the MDD machine, get the motor defect detector code from the [GitHub* repository.](https://github.com/intel-iot-devkit/reference-implementation-private/tree/master/motor-defect-detector)
+* For the MDD machine, get the motor defect detector code from the [GitHub* repository.](https://github.com/intel-iot-devkit/motor-defect-detector-cpp)
 
 * Follow the motor defect detector readme to run the application for testing the Bearing Data Set. Skip the steps for installing Grafana and creating the dashboard in Grafana for data visualization.
 
@@ -149,7 +149,7 @@ In this application, KVM creates three guest VMs on a host machine. Each virtual
 	``` 
 * In the HMI Machine, visualize the data on Grafana for the OFD and MDD applications by following the steps given below:  
 
-	* Download the workload-consolidation repository in HMI from the [GitHub* repository.](https://github.com/intel-iot-devkit/reference-implementation-private/tree/master/workload-consolidation)
+	* Download the workload-consolidation repository in HMI from the [GitHub* repository.](https://github.com/intel-iot-devkit/Industrial-Workload-Consolidation)
 
 	* Run the Grafana server:
 		```
