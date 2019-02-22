@@ -5,7 +5,7 @@
 | Time to complete:     |  3 hours      |
 
 ## Introduction
-Factories use existing PLCs to control equipment and may use several different devices for the human machine interface (HMI), data ingestion, and computer vision application. This reference implementation demonstrates how all these workloads can run independently on one system. A Kernel-based virtual machine (KVM) on a host system runs multiple virtual machines (VMs) or guests. The [object flaw detector](https://github.com/intel-iot-devkit/object-flaw-detector-python) and the [motor defect detector](https://github.com/intel-iot-devkit/motor-defect-detector-cpp) applications are deployed on these virtual machines. Data visualization occurs on Grafana* on the third virtual machine.
+Factories use existing PLCs to control equipment and may use several different devices for the human machine interface (HMI), data ingestion, and computer vision application. This reference implementation demonstrates how all these workloads can run independently on one system. A Kernel-based virtual machine (KVM) on a host system runs multiple virtual machines (VMs) or guests. The [object flaw detector](https://github.com/intel-iot-devkit/object-flaw-detector-python) and the [motor defect detector](https://github.com/intel-iot-devkit/motor-defect-detector-cpp) applications are deployed on these virtual machines. Data visualization occurs on Grafana* on the third virtual machine.  For a high level overview of workload consolidation see the [Workload Consolidation in Industrial IoT](https://software.intel.com/en-us/articles/workload-consolidation-in-industrial-iot) article.
 
 ## Requirements
 
