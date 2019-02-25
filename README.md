@@ -82,7 +82,7 @@ In this application, KVM creates three guest VMs on a host machine. Each virtual
 
 		![WC3](./images/WC3.png)	
 
-	* In the next window set *Memory(RAM)* to **1024 MiB** and *CPUs* to **1**, then click on Forward Button.
+	* In the next window set *Memory(RAM)* to **1024 MiB** and *CPUs* to **1**, then click on Forward Button. You may need to increase the memory(RAM) of the VM to 4096 MiB temporarily when compiling the code samples and change back to 1024 MiB after.
 
 		![WC4](./images/WC4.png) 
 
