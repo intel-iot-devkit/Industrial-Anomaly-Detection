@@ -1,4 +1,4 @@
-# Workload Consolidation
+# Industrial Anomaly Detection
 | Details            |                 |
 |-----------------------|------------------|
 | Target OS:            |  Ubuntu* 16.04 LTS     |
