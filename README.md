@@ -1,7 +1,7 @@
 # Industrial Anomaly Detection
 | Details            |                 |
 |-----------------------|------------------|
-| Target OS:            |  Ubuntu* 16.04 LTS     |
+| Target OS:            |  Ubuntu* 18.04 LTS     |
 | Time to complete:     |  3 hours      |
 
 ## Introduction
@@ -13,13 +13,13 @@ Factories use existing PLCs to control equipment and may use several different d
 [IEI Tank* AIoT Developer Kit](https://software.intel.com/en-us/iot/hardware/iei-tank-dev-kit)
 
 ### Software
-* Ubuntu 16.04
+* Ubuntu 18.04
 * InfluxDB* v1.7.1
 * Grafana* v5.3.2
 
 ## How It Works
 
-In this application, KVM creates three guest VMs on a host machine. Each virtual machine runs with Ubuntu 16.04 as the operating system. The first machine, named OFD, runs the object flaw detector application. The object flaw detector application detects anomalies on the objects moving on a conveyer belt and stores this data locally on InfluxDB. The second machine, named MDD, hosts the motor defect detector application which also stores the data locally on InfluxDB. Data visualization occurs on Grafana* on the third virtual machine, HMI, using data from OFD and MDD InfluxDB.
+In this application, KVM creates three guest VMs on a host machine. Each virtual machine runs with Ubuntu 18.04 as the operating system. The first machine, named OFD, runs the object flaw detector application. The object flaw detector application detects anomalies on the objects moving on a conveyer belt and stores this data locally on InfluxDB. The second machine, named MDD, hosts the motor defect detector application which also stores the data locally on InfluxDB. Data visualization occurs on Grafana* on the third virtual machine, HMI, using data from OFD and MDD InfluxDB.
 
 ![archDiagram](./images/archDiagram.png)
 
@@ -55,7 +55,7 @@ In this application, KVM creates three guest VMs on a host machine. Each virtual
 
 4. Reboot the system to make your user an effective member of *libvirtd* user group.
 
-5. To create virtual machine with Ubuntu 16.04 as a guest operating system, download 64-bit PC desktop ubuntu image from [Ubuntu 16.04 LTS](http://releases.ubuntu.com/16.04/).
+5. To create virtual machine with Ubuntu 18.04 as a guest operating system, download 64-bit PC desktop ubuntu image from [Ubuntu 18.04 LTS](http://releases.ubuntu.com/18.04/).
 
 6. Create a directory for storage pool: 
 	```
@@ -82,7 +82,7 @@ In this application, KVM creates three guest VMs on a host machine. Each virtual
 
 		![WC3](./images/WC3.png)	
 
-	* In the next window set *Memory(RAM)* to **1024 MiB** and *CPUs* to **1**, then click on Forward Button. You may need to increase the memory(RAM) of the VM to 4096 MiB temporarily when compiling the code samples and change back to 1024 MiB after.
+	* In the next window set *Memory(RAM)* to **1024 MiB** and *CPUs* to **4**, then click on Forward Button. You may need to increase the memory(RAM) of the VM to 4096 MiB temporarily when compiling the code samples and change back to 1024 MiB after.
 
 		![WC4](./images/WC4.png) 
 
